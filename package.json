@@ -1,6 +1,6 @@
 {
   "name": "@studio/browser-stream",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Naive stream shim for smaller Browserify bundles",
   "scripts": {
     "lint": "eslint .",
