@@ -1,0 +1,41 @@
+{
+  "name": "@studio/browser-stream",
+  "version": "0.0.0",
+  "description": "Naive stream shim for smaller Browserify bundles",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "mochify && mocha",
+    "watch": "mochify --watch",
+    "posttest": "npm run lint",
+    "preversion": "npm test",
+    "version": "changes --commits",
+    "postversion": "git push --follow-tags && npm publish"
+  },
+  "main": "./lib/browser-stream",
+  "browser": {
+    "stream": "./lib/browser-stream"
+  },
+  "keywords": [
+    "stream",
+    "browser",
+    "transform"
+  ],
+  "author": "Maximilian Antoni <max@javascript.studio>",
+  "homepage": "https://github.com/javascript-studio/studio-browser-stream",
+  "eslintConfig": {
+    "extends": "@studio"
+  },
+  "devDependencies": {
+    "@sinonjs/referee-sinon": "^4.0.0",
+    "@studio/changes": "^1.5.1",
+    "@studio/eslint-config": "^1.0.2",
+    "eslint": "^5.0.1",
+    "mocha": "^5.2.0",
+    "mochify": "^5.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/javascript-studio/studio-browser-stream.git"
+  },
+  "license": "MIT"
+}
